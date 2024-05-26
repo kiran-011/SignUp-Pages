@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    .main{
+        border: 1px solid black;
+        width:350px;
+        border-radius: 5px;
+        background-color: aquamarine;
+        margin:0 auto;
+        position: relative;
+        top:45%;
+        transform: translateY(-50%); 
+        background:linear-gradient(to top left,white,transparent,white);
+    }
+    h1{
+        font-family: "Lato", sans-serif;
+        font-size:45px;
+    }
+    body{
+        height: 100vh;
+        width: 100vw;
+        background: linear-gradient(to top left,cyan,rgb(25, 93, 95),rgb(229, 179, 179));
+    }
+   #field{
+    padding:20px 0px 20px 50px;
+    
+   }
+   label{
+    font-family: "Lato", sans-serif;
+    font-size:20px;
+   }
+   h5{
+    font-family: "Lato", sans-serif;
+        font-size:13px;
+   }
+   .middle{
+    margin-top: 13px;
+    margin-bottom: 20px;
+    height: fit-content;
+   }
+   #name,#email{
+    height:35px;
+    width:90%;
+    margin-top:5px;
+    padding-left: 10px;
+    background-color:aliceblue;
+    border-radius:3px ;
+    background-color: transparent;
+    color: black;
+   }
+   ::placeholder{
+    color:black;
+   }
+   h4{
+    font-family: "Lato", sans-serif;
+        font-size:15px;
+   }
+   button{
+    height:40px;
+    width: 90%;
+    font-family: "Lato", sans-serif;
+    font-size:15px;
+    color:black ;
+    background-color:rgb(79, 165, 223);
+    margin-bottom: 5px;
+   }
+</style>
+<body>
+    <div class="main">
+        <div id="field">
+            <div class="top">
+            <h1>SignUp</h1>
+            <h5>It just takes 30 seconds</h5>
+            </div>
+            <div class="middle">
+            <label for="fullname" id="fname">Full Name</label><br>
+            <input type="text" id="name" placeholder="Name"></br>
+            <label for="email">Your Email:</label><br>
+            <input type="email" id="email" placeholder="Email"><br>
+            <label for="password">Your New Password:</label><br>
+            <input type="password" id="name" placeholder="Password">
+            </div>
+            <div class="bottom">
+                <button>Create Account</button>
+                <h4>Already have an Account? <a href="">Login</a> </h4>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
